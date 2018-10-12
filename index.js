@@ -5,8 +5,14 @@ function RandomRed(){
 
 }
 
+var i = 0;
 setInterval(()=>{
-	app.style.backgroundcolor = "rgb(255,222,255)";
+	if(i%2==0){
+		app.style.backgroundColor = RandomRed();
+	} else {
+		app.style.backgroundColor = RandomBlue();
+	}
+	i++;
 }, 500);
 
 //B
